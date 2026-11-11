@@ -13,8 +13,8 @@ const STORAGE_KEY = "kosh_site_data";
 const AUTH_KEY = "kosh_admin_token";
 
 /* ---- DEMO credentials — CHANGE before deployment ---- */
-const ADMIN_USER = "admin";
-const ADMIN_PASS = "kosh2026";
+const ADMIN_USER = "kosh";
+const ADMIN_PASS = "Kosh.12";
 
 function showToast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(t._timer);t._timer=setTimeout(()=>t.classList.remove("show"),2400)}
 
