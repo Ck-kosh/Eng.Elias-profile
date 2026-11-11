@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kosh — Software Engineer & Security Systems Specialist</title>
+<meta name="description" content="Professional portfolio of Kosh — Software Engineer and CCTV / Security Systems Installation specialist. Software development, CCTV, solar cameras, alarm systems and school bell installations.">
+<meta property="og:title" content="Kosh — Software Engineer & Security Systems Specialist">
+<meta property="og:description" content="Software development portfolio and professional security installation services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234c1d95'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='Arial'>K</text></svg>">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">K</span>
+      <span class="brand-text">Kosh<em>.</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm hide-mobile">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-text reveal">
+      <p class="hero-hello">👋 Hello, I'm</p>
+      <h1 class="hero-name" id="heroName">Kosh</h1>
+      <div class="hero-roles">
+        <span class="role-badge">Software Engineer</span>
+        <span class="role-badge role-badge-alt">Security Systems Specialist</span>
+      </div>
+      <p class="hero-desc" id="heroTagline">
+        I build modern web applications and install professional security systems —
+        from CCTV &amp; IP cameras to solar cameras, alarm systems and automated school bells.
+      </p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#services" class="btn btn-outline-light">Explore Services</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me ↗</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat"><span class="stat-num" data-count="25">0</span><span class="stat-label">Projects Done</span></div>
+        <div class="stat"><span class="stat-num" data-count="40">0</span><span class="stat-label">Happy Clients</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="photo-ring">
+        <div class="photo-frame">
+          <img id="profilePhoto" src="" alt="Profile photo of Kosh">
+        </div>
+        <div class="float-chip chip-1">💻 Code</div>
+        <div class="float-chip chip-2">📷 CCTV</div>
+        <div class="float-chip chip-3">🔐 Security</div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">01 — About Me</span>
+      <h2 class="section-title">Engineer by profession, <span class="accent">security expert</span> by craft</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img id="aboutPhoto" src="" alt="Kosh professional portrait">
+        <div class="about-photo-badge">⭐ Trusted Technician</div>
+      </div>
+      <div class="about-text reveal">
+        <p id="bioText"></p>
+        <div class="skills" id="skillsList"></div>
+        <div class="about-cta">
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+          <a href="#services" class="btn btn-outline-dark">My Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="section section-alt" id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">02 — Software Engineering</span>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub">A selection of software I've designed, built and shipped.</p>
+    </div>
+    <div class="projects-grid" id="projectsGrid"><!-- rendered by JS --></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section section-dark" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">03 — Security Services</span>
+      <h2 class="section-title light">CCTV &amp; <span class="accent-blue">Security Installations</span></h2>
+      <p class="section-sub light">Professional supply, installation and configuration of surveillance and alarm systems — for homes, schools and businesses.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"><!-- rendered by JS --></div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">04 — My Work</span>
+      <h2 class="section-title">Projects <span class="accent">Gallery</span></h2>
+      <p class="section-sub">Real installations and software work — click any image to zoom.</p>
+    </div>
+    <div class="gallery-controls reveal">
+      <input type="search" id="gallerySearch" class="search-input" placeholder="🔍 Search gallery...">
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="cctv">CCTV Installation</button>
+        <button class="pill" data-filter="solar">Solar Cameras</button>
+        <button class="pill" data-filter="alarm">Alarm Systems</button>
+        <button class="pill" data-filter="school">School Bells</button>
+        <button class="pill" data-filter="software">Software Projects</button>
+      </div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"><!-- rendered by JS --></div>
+    <p class="gallery-empty" id="galleryEmpty" hidden>No images match your search. Try another keyword.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">05 — Contact</span>
+      <h2 class="section-title">Let's Build Something <span class="accent">Secure</span></h2>
+      <p class="section-sub">Enquiries about software development, CCTV installation or any security service — I'm one message away.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="tel:+254769021360">
+          <span class="cc-icon">📞</span>
+          <div><h4>Call Me</h4><p id="contactPhone">+254 769 021 360</p></div>
+          <button class="copy-btn" data-copy="+254769021360" title="Copy number">⧉</button>
+        </a>
+        <a class="contact-card" href="mailto:thekosh12@gmail.com">
+          <span class="cc-icon">✉️</span>
+          <div><h4>Email</h4><p id="contactEmail">thekosh12@gmail.com</p></div>
+          <button class="copy-btn" data-copy="thekosh12@gmail.com" title="Copy email">⧉</button>
+        </a>
+        <a class="contact-card wa-card" href="https://wa.me/254769021360?text=Hello%20Kosh%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener">
+          <span class="cc-icon">💬</span>
+          <div><h4>WhatsApp</h4><p>Chat instantly — replies fast</p></div>
+          <span class="cc-arrow">→</span>
+        </a>
+        <div class="contact-card">
+          <span class="cc-icon">📍</span>
+          <div><h4>Location</h4><p id="contactLocation">Kenya — available nationwide</p></div>
+        </div>
+        <div class="social-row" id="socialRow"></div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <h3>Send an Enquiry</h3>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name *" required>
+          <input type="tel" name="phone" placeholder="Phone number">
+        </div>
+        <input type="email" name="email" placeholder="Email address *" required>
+        <select name="service" required>
+          <option value="" disabled selected>What do you need? *</option>
+          <option>Software / Web Development</option>
+          <option>CCTV Installation</option>
+          <option>IP / Solar / Standalone Cameras</option>
+          <option>Gate Alarm / Siren Systems</option>
+          <option>School Electric Bells / Timers</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Tell me about your project... *" required></textarea>
+        <button type="submit" class="btn btn-primary btn-block">Send via WhatsApp ➤</button>
+        <p class="form-note">Submitting opens WhatsApp with your message pre-filled — no data is stored.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="brand"><span class="brand-mark">K</span><span class="brand-text light">Kosh<em>.</em></span></a>
+      <p>Software Engineer &amp; Security Systems Service Provider. Building digital products — and protecting physical spaces.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#gallery">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">CCTV Installation</a><a href="#services">IP &amp; Solar Cameras</a><a href="#services">Alarm Systems</a><a href="#services">School Bells</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="tel:+254769021360">+254 769 021 360</a>
+      <a href="mailto:thekosh12@gmail.com">thekosh12@gmail.com</a>
+      <a href="https://wa.me/254769021360" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kosh. All rights reserved. Crafted with 💜 and ☕.</p>
+    <a href="admin.html" class="admin-link">Admin</a>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
